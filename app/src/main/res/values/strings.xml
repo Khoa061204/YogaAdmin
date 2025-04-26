@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Yoga Admin</string>
+
+    <!-- Days of Week -->
+    <string-array name="days_of_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <!-- Yoga Class Types -->
+    <string-array name="class_types">
+        <item>Flow Yoga</item>
+        <item>Aerial Yoga</item>
+        <item>Family Yoga</item>
+    </string-array>
+
+    <!-- Prompts -->
+    <string name="day_of_week_prompt">Select Day of Week</string>
+    <string name="class_type_prompt">Select Class Type</string>
+</resources>

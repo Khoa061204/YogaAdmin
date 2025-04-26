@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Yoga Class"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="16dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerDayOfWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/day_of_week_prompt"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etCourseTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Time (HH:MM)"
+            android:inputType="time"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etCapacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Capacity (Max 50)"
+            android:inputType="number"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration (Minutes)"
+            android:inputType="number"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price per Class (£)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerClassType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/class_type_prompt"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etTeacherName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teacher Name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description (Optional)"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnSaveClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Class"/>
+    </LinearLayout>
+</ScrollView>

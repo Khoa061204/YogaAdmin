@@ -1,0 +1,44 @@
+
+[versions]
+# SDK Versions
+compileSdk = "35"
+minSdk = "24"
+targetSdk = "35"
+versionCode = "1"
+versionName = "1.0"
+
+# Plugin Versions
+androidGradlePlugin = "8.2.2"
+kotlin = "1.9.0"
+googleServices = "4.4.1"
+
+# Dependency Versions
+appcompat = "1.6.1"
+material = "1.11.0"
+activity = "1.8.2"
+constraintlayout = "2.1.4"
+junit = "4.13.2"
+extJunit = "1.1.5"
+espresso = "3.5.1"
+firebaseBom = "32.7.4"
+
+[libraries]
+# AndroidX Libraries
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+androidx-material = { module = "com.google.android.material:material", version.ref = "material" }
+androidx-activity = { module = "androidx.activity:activity", version.ref = "activity" }
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+
+# Firebase
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-database = { module = "com.google.firebase:firebase-database" }
+
+# Testing Libraries
+junit = { module = "junit:junit", version.ref = "junit" }
+androidx-test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "extJunit" }
+androidx-test-espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
